@@ -1,0 +1,617 @@
+html{
+    font-family: "Ubuntu","Ubuntu-Bold","Ubuntu-Medium","Ubuntu-Regular";
+    text-rendering: optimizeLegibility;
+    Font-weight: 300;
+    Font-size: 20px;
+}
+body{
+    padding: 10px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    font-weight: bold;
+    color: rgb(0, 0, 94);
+    font-weight: bold;
+    font-weight: 100;
+    margin-bottom: -10px;
+}
+h3{
+    font-weight: 100;
+    cursor: default;
+}
+p{
+    color: rgb(138, 136, 136);
+    font-weight: 100;
+    letter-spacing: normal;
+    word-spacing: normal;
+    cursor: default;
+}
+.button-next{
+    position: absolute;
+    top: 85%;
+    left: 68%;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: rgb(43, 43, 233);
+    border: 1px solid rgb(43, 43, 233);
+    cursor: pointer;
+}
+.button-back{
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 33%;
+    font-size: medium;
+    width: 100px;
+    height: 40px;
+    color: rgb(43, 43, 233);
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.button-confirm{
+  visibility: hidden;
+  position: absolute;
+    top: 85%;
+    left: 68%;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: rgb(43, 43, 233);
+    border: 1px solid rgb(43, 43, 233);
+    cursor: pointer;
+}
+
+/* sidebar */
+
+.numbers{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90vh;
+    width:50vh;
+}
+.siderbar{
+    position: relative;
+    width: 21%;
+    height: 93vh;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+.numbers{
+    color: #fff;
+    margin-top: 60px;
+}
+.number1{
+  background-color: rgb(41, 41, 223);
+
+}
+.number{
+    font-size: small;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.number:hover{
+    background-color: rgb(41, 41, 223);
+    color: #fff;
+}
+
+.step1{
+    color: #fff;
+    margin-top: 100px;
+}
+.step2{
+    color: #fff;
+    margin-top: 45px;
+}
+.step3{
+    color: #fff;
+    margin-top: 45px;
+}
+.step4{
+    color: #fff;
+    margin-top: 45px;
+}
+.step{
+    font-size: small;
+    color: rgb(200, 195, 195);
+}
+.steps{
+    margin-left: -20px;
+} 
+
+/* your info */
+
+.window-1{
+
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 40%;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    height: 50px;
+}
+.form-control small{
+  visibility: hidden;
+  font-size: 10px;
+}
+.error small{
+  visibility: visible;
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+
+}
+.form-control.error input{
+    height: 80px;
+    border: 1.5px solid rgb(239, 48, 48);
+    border-radius: 6px;
+    padding: 10px;
+}
+.form-control.success input {
+  border: 1.5px solid rgb(5, 186, 5);
+  border-radius: 6px;
+  height: 80px;
+  padding: 10px;
+
+}
+.form-control label{
+    font-size: large;
+    color: rgb(52, 52, 219);
+    margin-bottom: 4px;
+}
+.form-control input{
+    height: 80px;
+    border: 1px solid rgb(76, 76, 245);
+    border-radius: 6px;
+    padding: 10px;
+    
+}
+.form-control input:focus{
+    outline: none;
+    border: 2px solid blue;
+}
+/* select plan */
+
+.window-2{
+    visibility: hidden;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 40%;
+}
+.packet-type{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.yearly-small1{
+  top: 75%;
+  position: absolute;
+  visibility: hidden;
+  margin-top: 0px;
+  color:rgb(76, 76, 245) ;
+}
+.yearly-small2{
+  top: 75%;
+  position: absolute;
+  visibility: hidden;
+  margin-top: 0px;
+  color:rgb(76, 76, 245) ;
+}
+.yearly-small3{
+  top: 75%;
+  position: absolute;
+  visibility: hidden;
+  margin-top: 0px;
+  color:rgb(76, 76, 245) ;
+}
+.small1{
+  visibility: hidden;
+  display: block;
+  margin-top: -6px;
+  margin-bottom: 5px;
+  
+  color: rgb(236, 26, 26);
+}
+.small2{
+  visibility: hidden;
+  display: block;
+  margin-top: -6px;
+  margin-bottom: 5px;
+  color: rgb(236, 26, 26);
+}
+.small3{
+  visibility: hidden;
+  display: block;
+  margin-top: -6px;
+  margin-bottom: 5px;
+  color: rgb(236, 26, 26);
+}
+.packet-type div{
+    width: 25%;
+    border: 1px solid rgb(164, 164, 164);
+    padding: 15px;
+    border-radius: 5px;
+}
+.packet-type div:hover{
+    border: 1.5px solid;
+    border-color: rgb(60, 60, 222);
+}
+.packet-type h3{
+    margin-bottom: -20px;
+    color: rgb(60, 60, 222);
+}
+.packet-type p{
+  position: relative;
+    color: rgb(84, 83, 83);
+}
+.icon{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 15px;
+    color: #fff;
+
+}
+.icon1{
+    background-color: rgb(194, 184, 3);
+}
+.icon2{
+    background-color: rgb(211, 85, 85);
+}
+.icon3{
+    background-color: rgb(44, 44, 225);
+}
+
+.switch1{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 245, 245);
+}
+.switch1 h3{
+    font-weight: 100;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(2, 2, 99);
+    /* -webkit-transition: .4s;
+    transition: .4s; 
+    */
+  } 
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s; 
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(2, 2, 99);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(2, 2, 99);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*   add ons  */
+.window-3{
+    visibility: hidden;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 40%;
+}
+.circle{
+  visibility: hidden;
+  font-size: 35px;
+  position: absolute;
+  left: 5%;
+  color:rgb(15, 160, 7);
+}
+.costume-options{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    border: 1.5px solid rgb(212, 207, 207);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: -20px;
+}
+.costume-options:hover{
+    border: 1.5px solid rgb(60, 60, 222);
+}
+.costume-options div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 15%;
+}
+.costume-options div h3{
+    color: rgb(27, 27, 234);
+    margin-bottom: -5px;
+    font-size: x-large;
+    font-weight: 100;
+}
+.costume-options div p{
+    font-size: medium;
+    color: grey;
+}
+.costume-options p{
+    font-size: medium;
+    color: rgb(87, 0, 179);
+}
+
+
+  /* The container
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  } */
+  
+  /* Hide the browser's default checkbox */
+  /* .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  } */
+  
+  /* Create a custom checkbox */
+  /* .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  } */
+  
+  /* On mouse-over, add a grey background color */
+  /* .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  } */
+  
+  /* When the checkbox is checked, add a blue background */
+  /* .container input:checked ~ .checkmark {
+    background-color: #2125f3;
+  } */
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* .checkmark:after {
+    content: "";
+    position: absolute;
+    visibility: hidden;
+  } */
+  
+  /* Show the checkmark when checked */
+  /* .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+   */
+  /* Style the checkmark/indicator */
+  /* .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .window-3 .button-next{
+    position: absolute;
+    top: 120%;
+    left: 90%;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: rgb(43, 43, 233);
+    border: 1px solid rgb(43, 43, 233);
+    cursor: pointer;
+  } */
+
+  /* summary */
+
+  .window-4{
+    visibility: hidden;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 40%;
+    
+  }
+  .payment{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 228, 228);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .payment div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .payment-1{
+    border-bottom: 1px solid grey ;
+    padding-bottom: 10px;
+  }
+  .payment-1 div{
+    display: flex;
+    flex-direction: column;
+  }
+  .payment-1 div h3{
+    color: rgb(27, 27, 234);
+    margin-bottom: 0px;
+    font-size: x-large;
+    font-weight: 100;
+  }
+  .payment-1 button{
+    border: rgb(234, 228, 228);
+    background-color:rgb(234, 228, 228);
+    color: black;
+    font-size: small;
+    width: fit-content;
+    border-bottom: 1.2px solid black;
+    cursor: pointer;
+  }
+  .payment-1 button:hover{
+    color: rgb(87, 0, 179);
+    border-bottom: 1.5px solid black;
+  }
+  .payment-1 p{
+    font-size: larger;
+    color: rgb(87, 0, 179);
+  }
+  .payment-2{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .payment-2 h3{
+    font-size: medium;
+    color: grey;
+  }
+  .payment-2 p{
+    font-size: medium;
+    color: rgb(87, 0, 179);
+  }
+  .payment-3{
+    border-top: 1px solid gray;
+    margin-bottom: -15px;
+  }
+  .payment-3 p{
+    font-size: medium;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .payment-3 h2{
+    color: rgb(87, 0, 179);
+    margin-top: 10px;
+  }
+  .payment .button-next{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: rgb(43, 43, 233);
+    border: 1px solid rgb(43, 43, 233);
+    cursor: pointer;
+  }
+
+  /* thanks */
+
+.window-5{
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 30%;
+  left: 35%;
+  width: 45%;
+}
+.last-icon{
+  font-size: 60px;
+  border: 1px solid rgb(241, 99, 91);
+  padding: 30px;
+  border-radius: 50%;
+  background-color: rgb(241, 99, 91);
+  color: rgb(67, 26, 216);
+}
+.window-5 h1{
+  font-weight: bold;
+}
+.window-5 p{
+  font-size: 20px;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+  

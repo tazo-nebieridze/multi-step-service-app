@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/fonts/Ubuntu-Bold.ttf">
+  <link rel="stylesheet" href="assets/fonts/Ubuntu-Medium.ttf">
+  <link rel="stylesheet" href="assets/fonts/Ubuntu-Regular.ttf">
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar start -->
+  <div class="siderbar">
+    <img src="assets/images/bg-sidebar-desktop.svg" alt="">
+    <div class="numbers">
+      <div class="number number1">1</div>
+      <div class="number number2">2</div>
+      <div class="number number3">3</div>
+      <div class="number number4">4</div>
+    </div>
+    <div class="steps">
+      <div class="step1">
+        <div class="step">Step 1</div>
+        <div class="step-name">Your info</div>
+      </div>
+      <div class="step2">
+        <div class="step">Step 2</div>
+        <div class="step-name"> Select plan</div>
+      </div>
+      <div class="step3">
+        <div class="step">Step 3</div>
+        <div class="step-name">Add-ons</div>
+      </div>
+      <div class="step4">
+        <div class="step">Step 4</div>
+        <div class="step-name">Summary</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="window-1">
+    <div>
+      <h1>Personal info</h1>
+      <p>Please provide your name, email address, and phone number.</p>
+    </div>
+    <div class="page-1">
+      <form action="" class="form-1">
+        <div class="form-control ">
+          <label for="text">Name</label>
+          <input type="text" id="text" placeholder="e.g. Stephen King">
+          <small>this field is required</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email Address</label> 
+          <input type="email" id="email" placeholder="e.g. stephenking@lorem.com">
+          <small>this field is required</small>
+        </div>
+        <div class="form-control">
+          <label for="number">Phone Number</label>
+          <input type="number" id="number" placeholder="e.g. +1 234 567 890"> 
+          <small>this field is required</small> 
+        </div>
+      </form>
+     
+    </div>
+  </div>
+
+  <div class="window-2">
+    <div>
+      <h1>Select your plan</h1>
+      <p>You have the option of monthly or yearly billing.</p>
+    </div>
+    <div class="packet-type">
+      <div class="packet1 packet">
+        <small class="small1">choose required</small>
+        <ion-icon class="icon icon1" name="football-outline"></ion-icon>
+        <h3 class="h3-1">Arcade</h3>
+        <p class="p-1" >$9/mo</p>
+        <small class="yearly-small1">2 month free</small>
+       
+      </div>
+      <div class="packet2 packet">
+        <small class="small2">choose required</small>
+        <ion-icon class="icon icon2" name="basketball-outline"></ion-icon>
+        <h3 class="h3-1">Advanced</h3>
+        <p class="p-1">$12/mo</p>
+        <small class="yearly-small2">2 month free</small>
+        
+      </div>
+      <div class="packet3 packet" >
+        <small class="small3">choose required</small>
+        <ion-icon class="icon icon3" name="game-controller-outline"></ion-icon>
+        <h3 class="h3-1">Pro</h3>
+        <p class="p-1">$15/mo</p>
+        <small class="yearly-small3">2 month free</small>
+        
+      </div>
+    </div>
+    <div class="switch1">
+      <h3>monthly</h3>
+      <label class="switch">
+        <input type="checkbox" class="checkbox">
+        <span class="slider round"></span>
+      </label>
+        
+      <h3>yearly</h3>
+    </div>
+    
+    
+  </div>
+
+  <div class="window-3">
+    <div>
+      <h1> Pick add-ons</h1>
+      <p>Add-ons help enhance your gaming experience.</p>
+    </div>
+    <div class="page-3">
+      <div class="costume-options costume-options1">
+        <ion-icon class="circle circle1" name="checkmark-circle-outline"></ion-icon>
+        <div>
+          <h3>Online service</h3>
+          <p>Access to multiplayer games</p>
+        </div>
+        <p class="p-7">+$1/mo</p>
+      </div>
+      <div class="costume-options costume-options2">
+        <ion-icon class="circle circle2" name="checkmark-circle-outline"></ion-icon>
+        <div>
+          <h3>Larger storage</h3>
+          <p>Extra 1TB of cloud save</p>
+        </div>
+        <p class="p-7">+$2/mo</p>
+      </div>
+      <div class="costume-options costume-options3">
+        <ion-icon class="circle circle3" name="checkmark-circle-outline"></ion-icon>
+        <div>
+          <h3>Customizable Profile</h3>
+          <p>Custom theme on your profile</p>
+        </div>
+        <p class="p-7">  +$2/mo</p>
+      </div>
+    </div>
+    
+    
+  </div>
+  <div class="window-4">
+    <div>
+      <h1>Finishing up</h1>
+      <p>Double-check everything looks OK before confirming.</p>
+    </div>
+    <div class="payment" >
+      <div class="payment-1">
+        <div>
+          <h3>Arcade (monthly)</h3>
+          <button class="button3">change</button>
+        </div>
+        <p>$9/mo</p>
+      </div>
+      <div class="payment-2">
+        <div>
+          <h3>Online service</h3>
+          <p class="pp1">+$1/mo</p>
+        </div>
+        <div>
+          <h3>Large storage</h3>
+          <p class="pp2">+$2/mo</p>
+        </div>
+        <div>
+          <h3>Costomizamble profile</h3>
+          <p class="pp3">+$2/mo</p>
+        </div>
+      </div>
+      <div class="payment-3">
+        <p>Totale (per month)</p>
+        <h2>=$12/mo</h2>
+      </div>
+    </div>
+    
+    <!-- <button class="button-next">Confirm</button> -->
+  </div>
+  <div>
+    <button class="button-next">Next-step</button>
+    <button class="button-back">Go back</button>
+    <button class="button-confirm">Confirm</button>
+  </div>
+  <div class="window-5">
+    <ion-icon class="last-icon" name="checkmark-outline"></ion-icon>
+    <h1>Thank you!</h1>
+    <p>Thanks for confirming your subscription! We hope you have fun 
+      using our platform. If you ever need support, please feel free 
+      to email us at support@loremgaming.com
+    </p>
+  </div>
+  
+  
+  
+
+  
+ 
+
+  
+  
+
+  
+  
+
+  <!-- Sidebar end -->
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</html>
